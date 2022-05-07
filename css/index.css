@@ -1,0 +1,508 @@
+/* General Styling */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0%;
+        opacity: 1;
+        transition: 3s opacity;
+        letter-spacing: .2vw;
+        font-family: Avante Garde, Helvetica;
+        font-size: 1.5vw;
+        overflow-x: hidden;
+        user-select: none;
+    }
+
+    /*Fade Effect upon page load*/
+
+    body.fade-out {
+        opacity: .1;
+    }
+
+    /*H1 Elements*/
+
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', Optima;
+        text-align: center;
+        margin-top: 3%;
+        color: #1a1a1a;
+    }
+
+    h1:hover {
+        filter: grayscale(5%);
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
+
+    /*Portfolio White Text */
+    .white-text {
+        color: #fff;
+        padding-top: 10vh;
+    }
+
+    /*Paragraph elements*/
+    p {
+        font-family: Perpetua, Rockwell Extra Bold;
+        text-align: justify;
+        letter-spacing: .1vw;
+        font-size: 2.5vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    p:hover {
+        transition: transform 1s;
+        transform: scale(1.01);
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .center:hover {
+        transition: transform 2s;
+        transform: scale(1.1);
+       
+    }
+
+
+    /* Anchor Elements*/
+    a {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    /*Image elements*/
+    img {
+        filter: grayscale(75%);
+        border-radius: 8px;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: auto auto auto auto;
+    }
+
+    img:hover {
+        filter: grayscale(5%);
+    }
+
+    /*Footer Styling*/
+    footer {
+        padding: 2%;
+        background-color: white;
+    }
+/* END General Styling*/
+
+/* Navbar styling */
+    .Navbar {
+        overflow: hidden;
+        background-color: rgb(25, 25, 25);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        -webkit-animation: moveNav 5s;
+        animation: moveNav 5s;
+    }
+
+    @keyframes moveNav {
+        from {left: -100vw;}
+        to { left: 0vw;}
+    }
+
+    /*Navbar Links*/
+    .Navbar a {
+        float: left;
+        display: block;
+        color: white;
+        padding: .75vw 1vw;
+        text-decoration: none;
+        font-family: Avant Garde, Helvetica;
+        font-size: 1.5vw;
+        text-align: center;
+        position: relative;
+        -webkit-animation: moveNavText 5.75s;
+        animation: moveNavText 5.75s;
+    }
+
+    @keyframes moveNavText {
+        from {top: -100vw;}
+        t0 {top: 0vw;}
+    }
+
+    .Navbar a:hover {
+        background-color: #f4f4f4;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s ease-in;
+    }
+
+    .Navbar a.active {
+        background-color: darkgray;
+    }
+
+/* End Navbar Styling */
+
+/* Video Styling */
+
+    /*Background Video*/
+    #Typing_Video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        z-index: -1;
+    }
+
+    
+
+    /*Text over video*/
+    .Video_Text {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        width: 100%;
+        height: 100vh;
+        padding-top: 2vh;
+        position: relative;
+        -webkit-animation: moveVideoText 5.75s;
+        animation: moveVideoText 5.75s;
+    }
+
+    /*Animation of video text coming down from top of page on load*/
+    @keyframes moveVideoText{
+        from {top: -100vw;}
+        to {top: 0vw;}
+    }
+    /*END Video Styling*/
+
+/*Slideshow Styling*/
+    #Slideshow_Background {
+        background: rgba(255, 255, 255, 0.35);
+    }
+
+    .mySlides{
+        display: none;
+    }
+
+    /*Slideshow section*/
+    #Slideshow_Container {
+        width: 39.5vw;
+        height: auto;
+        padding-top: 4%;
+        position: relative;
+        margin: auto;
+    }
+
+    #Slideshow_Container a { /*Removes underline on 'Previous' and 'Next' buttons*/
+        text-decoration: none;
+    }
+
+    .Slideshow_Images {
+        vertical-align: middle;
+        height: auto;
+        box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+        width: 100%;
+    }
+
+    /*Next/Prev Buttons*/
+    .Previous, .Next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 2vw;
+        color: darkgrey;
+        font-weight: bold;
+        font-size: 1.5vw;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        transition: 0.6s ease;
+    }
+
+    .Next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .Previous:hover, .Next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+
+    /*Slideshow Text*/
+    .text {
+        color: white;
+        padding: 1vw;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Perpetua, Rockwell Extra Bold;
+        letter-spacing: .1vw;
+        font-size: 1.5vw;
+        background-color: rgba(0, 0, 0, .75);
+        font-weight: bold;
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    /*Slideshow dots*/
+    .dot {
+        cursor: pointer;
+        height: 1vw;
+        width: 1vw;
+        margin: .25vw;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        z-index: 1;
+    }
+
+    .active, .dot:hover {
+        background-color: black;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
+/* END Slideshow Styling*/
+
+/*Table Styling - cover About, Github, Youtube Sections */
+
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 1.6%;
+    height: 450px;
+    background-color: rgb(231, 231, 231);
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 1.6%;
+    height: 450px;
+    background-color: rgb(231, 231, 231);
+}
+
+.Row:after { /*Inserts a clear space after row so footer doesnt get overlaped./*/
+    content: "";
+    display: table;
+    clear: both;
+}
+/*END Table styling*/
+
+/* Contact Form Styling */
+    .Pop_Up_Button {
+        position: fixed;
+        bottom: 1.75vw;
+        right: 1.75vw;
+        width: 25vw;
+        background-color: white;
+        color: black;
+        border: solid black;
+        cursor: pointer;
+        -webkit-animation: movePopup 5s;
+        animation: movePopup 5s;
+    }
+
+    @keyframes movePopup {
+        from {right: -40vw;}
+        to {right: 1.75vw;}
+    }
+
+    @-webkit-keyframes movePopup {
+        from {right: -40vw;}
+        to {right: 1.75vw;}
+    }
+
+    /* Styling for the contact form*/
+    .form-popup {
+        z-index: 8;
+        display: none;
+        position: fixed;
+        bottom: .5vw;
+        right: .5vw;
+    }
+
+    .form-container {
+        max-width: 49vw;
+        padding: 1vw;
+        background-color: white;
+    }
+
+    .form-container input[type=text] {
+        width: 100%;
+        padding: .93vw;
+        margin: .6vw 0 .6vw 0;
+        border: none;
+        background: Gainsboro;
+        font-size: 1vw;
+    }
+
+    /*General button styling*/
+    button {
+        font-family: 'Trebuchet MS', Optima;
+        letter-spacing: .3vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+        padding: 1.5vw;
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+    }
+
+    button:hover, .form-container .btn:hover {
+        color: white;
+        background-color: black;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        border-color: silver;
+    }
+
+    .form-container .btn { /*Submit button*/
+        background-color: white;
+        color: black;
+        border-color: black;
+        margin-bottom: 1vh;
+    }
+
+    .form-container .cancel { /*Close button*/
+        background-color: black;
+        color: white;
+        border-color: gray;
+    }
+
+    .form-container .cancel:hover {
+        color: white;
+        background-color: darkred;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        border-color: black;
+    }
+
+    /*END Contact Form Styling */
+
+/*Media Queries Section */
+
+/*Since lot CSS Unit used alot on text is 'vw', media queries help keep text as good readable size when window expanded.*/
+
+    @media screen and (max-width: 527px) {
+        p {
+            font-size: 3.75vw;
+        }
+    }
+
+    @media screen and (min-width: 528px) and (max-width: 660px) {
+        p {
+            font-size: 3.5vw;
+        }
+    }
+
+    @media screen and (min-width: 661px) and (max-width: 799px) {
+        p {
+            font-size: 2.75vw;
+        }
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 924px) {
+        p {
+            font-size: 2.5vw;
+        }
+    }
+
+    @media screen and (min-width: 925px) and (max-width: 1050px) {
+        p {
+            font-size: 2.25vw;
+        }
+    }
+
+    @media screen and (min-width: 1051px) and (max-width: 1310px) {
+        p {
+            font-size: 2vw;
+        }
+    }
+
+    @media screen and (min-width: 1311px) and (max-width: 1535px) {
+        p {
+            font-size: 1.75vw;
+        }
+    }
+
+    @media screen and (min-width: 1536px) and (max-width: 2269px) {
+        p {
+            font-size: 1.5vw;
+        }
+    }
+
+    @media screen and (min-width: 2270px) {
+        p {
+            font-size: 1.35vw;
+        }
+    }
+
+    /* Media Rules for Navbar*/
+
+    /*Screens 1080px and smaller will display navlinks equally split*/ 
+
+    @media screen and (max-width: 1080px) {
+        .Navbar a {
+            width: 14.2%; 
+            font-size: 2.5vw;
+        }
+    }
+
+    /* Enlarges font for smaller screens*/
+
+    @media screen and (max-width: 1080px) {
+        .white-text {
+            font-size: 4.5vw;
+        }
+    }
+
+    /* Increases column size on larger screens*/
+
+    @media screen and (min-width: 1725px) {
+        .Column_1{
+            height: 550px;
+        }
+        .Column_2 {
+            height: 550px;
+        }
+    }
+
+    /*Remove margin on top H1 elements for larger screens */
+
+    @media screen and (min-width: 2000px) {
+        h1{
+            margin-top: 0;
+        }
+    }
+
+/*END Media Queries Section */
+
+
+    
