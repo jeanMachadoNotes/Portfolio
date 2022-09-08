@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+li  {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+
+}
+
+.navbar {
+    padding-bottom: 25px;
+} /* Solves overlapping issue*/
+
+/* Welcome Banner */
+
+.wrapper {
+    margin-top: 16px;
+    
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.welcome img {
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+
+.welcome p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+
+}

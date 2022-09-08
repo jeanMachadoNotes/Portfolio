@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Allows page elements to extend all the way to edge*/
+body { 
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*Welome Card */
+
+.card {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto; /*Centers card on page*/
+    margin-right: auto;
+    margin-top: 40px; /*Provides spacing above*/
+    margin-bottom: 40px; /*Provides spacing below*/
+    max-width: 400px; /*Sets size of card on page*/ /*Changed from 'width:50%' bcz wanted to keep card a limited size.*/
+}
+
+.card-container {
+    padding: 10px 16px;
+}
+
+.card-image {
+    float:left; 
+    width:50%; 
+    height: 50%;
+    margin: 17px 12px;
+}
+/*END Welcome Card */
+
+
+/*Navigation Bar*/
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: slategrey;
+    position: fixed;
+    top: 60%;
+    width: 100%;
+
+}
+
+li {
+    float: left;
+    width: 25%; /*Works with float to equal distance nav elements*/
+    
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    max-width: 100px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto; /*Centers anchor element in middle of list item.*/
+}
+
+
+
+/*END Navigation Bar*/

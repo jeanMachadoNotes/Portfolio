@@ -1,47 +1,79 @@
-// The function open and close contact form
+/*Canvas JS*/
+/*
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+
+
+var grd = ctx.createRadialGradient(275, 145, 5, 275, 120, 30);
+grd.addColorStop(0, "yellow");
+grd.addColorStop(1, "rgba(256, 180, 0, .9)");
+
+
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,600,400);
+
+
+ctx.beginPath();
+ctx.arc(275, 150, 30, 3.1, 2 * Math.PI)
+ctx.stroke();
+
+ctx.moveTo(0,150);
+ctx.lineTo(600, 150);
+ctx.stroke();
+ctx.font = "45px Verdana";
+ctx.strokeText("Sunrise Productions", 100, 200);
+
+var x = document.getElementById("location");
+
+function showPosition() {
+    navigator.geolocation.getCurrentPosition(showLocation);
 }
 
-function closeForm() {
-    document.getElementById('myForm').style.display = "none";
+
+function showLocation(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude;
+}
+*/
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id); //#smiley
 }
 
-// Displays first image in slideshow when page loads
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) { //Changes slide when arrows clicked
-    showSlides(slideIndex += n );
+function drop(ev){
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");// passes #smiley
+    ev.target.appendChild(document.getElementById(data));
 }
 
-//Changes slide when dots clicked
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function allowDrop(ev) {
+    ev.preventDefault();
 }
 
-function showSlides(n) {
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1};
-    if (n < 1) {slideIndex = slides.length};
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+function showStorage() {
+    var items = [];
+    var keys = [];
+    for (var i = 0; i < localStorage.length; i++) {
+        items += Object.values(localStorage)[i] + "<br>"; 
+        keys += Object.keys(localStorage)[i] + "<br>";
+     }
+
+    document.getElementById("lockeys").innerHTML = keys;
+    document.getElementById("locstor").innerHTML = items;
+} 
+
+function clearStorage() {
+    window.localStorage.clear();
+    return
 }
 
-//Code to allow clicking off form to close it.
 
-//First add an event listener for clicks on site
-document.addEventListener("click", function(event) {
-    //Here stats that IF there's a click on cancel button OR anywhere but contact form AND no click on PopUp button or Navbar button then calls closeForm();
-    if (event.target.matches(".cancel") || !event.target.closest(".form-popup") && !event.target.closest(".Pop_Up_Button") && !event.target.closest(".contact")) {
-        closeForm()
-    }
-}, false)
+
+ 
+
+
+function updateStorage() {
+   var user_input_id = document.getElementById("info_id").value;
+   var user_input_data = document.getElementById("info").value;
+   window.localStorage.setItem(user_input_id, user_input_data);
+}
