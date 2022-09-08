@@ -1,0 +1,14 @@
+Solutions List
+
+Navbar 
+Background not showing past list items
+- overflow: hidden is cause, remove to reveal.
+
+Overlapping page content
+- Add padding-bottom to div containing navbar.
+
+Floating IMG and text in Div, how to space text?
+- text-aling: center on p element with text.
+
+Remove spacing around certain div?
+- body element {margin:0};

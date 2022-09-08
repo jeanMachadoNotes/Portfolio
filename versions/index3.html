@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Portfolio byJean</title>
+        <link rel="stylesheet" href="/css/index3.css"/>
+        <script src="/webworker.js"></script>
+        
+    </head>
+    <body>
+
+        <!-- Welcome Card -->
+        <div class="card">
+            <img class="card-image" src="./img/jean-Edit-2-2.jpg" alt="Jean Machado Portait">
+            <div class="card-container">
+                <h2>Hi, I'm Jean Machado</h2>
+                <p>I really enjoy putting things together for an audience to experience.
+                    <br> 
+                1st Degree Blackbelt. Web Developer. Content Creator. Tech Enthusiast</p>
+            </div>
+        </div>
+
+         
+        <!-- END Welcome Card -->
+
+        <!-- Navigation Links -->
+
+    <!--
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/livethemachlife">Youtube</a> 
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/jean-machado-5039621b8/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/thejeanmachado/">Instagram</a>
+            </li>
+            <li>
+                <a href="https://github.com/jeanMachadoNotes">Github</a>
+            </li>
+        </ul>
+    -->
+       <p style="font-size:40px; text-shadow: 2px 2px 2px grey;"> Today I am feeling &#128516;</p>
+        <!-- End Navigation Links -->
+
+    <!--
+      <canvas id="myCanvas" height="400" width="600" style="border: 2px solid grey"/>
+    
+      <svg width="300" height="300" style="border:2px solid grey">
+        <circle cx="100" cy="100" r="50" stroke="darkslategrey" stroke-width="3" fill="lightblue" onclick="alert('You have clicked me!')"/>
+      </svg>
+    
+
+    <video width="720" height="560" controls>
+        <source src="jean-machado_modelo_slate.mp4" type="video/mp4">
+    </video>
+
+    <iframe src="https://www.youtube.com/embed/5KX_6dd4rPI?autoplay=1&mute=1&controls=0" height="540" width="720"></iframe>
+        
+    <button id="monkeytime"onclick="console.log(event.target.id)">Click Me!</button>
+    <p id="location">Location</p>
+
+    <div style="height:200px; width:200px; border: 2px solid red;" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <p id="smiley" draggable="true" ondragstart="drag(event)" style="font-size: 80px;"> &#128516;</p>
+    </div>
+    
+
+    <div style="height:200px; width:200px; border: 2px solid blue; "id="div1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+    <div style="width:40%; margin: auto; border: 2px dashed brown; padding: 15px">
+    <p>Type in Info:</p> 
+    <input id="info_id" type="text" size="10" placeholder="category">
+    <input id="info" type="text" size="10" placeholder="data">
+    <input type="submit" onclick="updateStorage()"></button>
+    <p>Local Storage Shows here:</p>
+    <button onclick="showStorage()">Download</button>
+    <p id="lockeys"></p>
+    <p id="locstor"></p>
+    <button onclick="clearStorage()">Clear Storage</button>
+    </div>
+   
+
+    <p>Count Numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Count</button>
+    <button onclick="stopWorker()">Stop Count</button>
+    
+   
+
+        <script>
+
+        var w;
+
+        function startWorker() {
+            if (typeof(w) == "undefined") {
+                w = new Worker("webworker.js");
+            } 
+            w.onmessage = function(event) {
+                    document.getElementById("result").innerHTML = event.data;
+            };
+        } 
+        
+
+        function stopWorker() {
+            w.terminate();
+            w = undefined;   
+        }
+        </script>
+--> 
+        <script src="./js/index.js"></script>
+        
+    </body>
+</html>
