@@ -20,9 +20,12 @@
 
 .navbar ul {
     list-style-type: none;
-    background-color: rgb(255, 255, 255);
+    background-color: #f2f2f2;
     border-bottom: 1px solid darkgrey;
-    margin-bottom: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 .navbar ul li {
@@ -47,6 +50,10 @@
     /*background-color: rgb(139, 139, 255);
     border-radius: 10px 10px 10px 10px;*/
     
+}
+
+.main {
+    margin-top: 70px;
 }
 
 /*////////////////// Social Links Navbar /////////////////*/
@@ -128,11 +135,18 @@
 
 .hero-card {
     width: 70%;
-    margin: 10px auto;
+    margin: 0px auto 10px;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
-    
-    
+      
+}
+
+.style-light {
+    background-color: #fff;
+}
+
+.style-dark {
+    background-color: #424245;
 }
 
 
@@ -162,6 +176,7 @@
 
 
 
+
 /*////////////////// Main Text Area /////////////////*/
 
 .main-text {
@@ -176,6 +191,7 @@
     .column {
         float: none;
         width: 100%;
+        z-index: 0;
     }
     .hero-card .column img {
         width: 80%;
@@ -184,6 +200,7 @@
         animation: slideIn 1s ease-out;
         animation-fill-mode: both;
         animation-delay: 1.0s;
+        z-index: 0;
     }
     
     .text {
@@ -256,11 +273,25 @@
     border-radius: 4px;
     background-color: #fff;
     color: black;
-    outline: none;
-    border: none;
 }
 
-.form-container form input,textarea:focus {
+.form-container form input[type=text], textarea {
+    border: 1px solid lightgrey;
+}
+
+.form-container form input[type=email] {
+    border: 1px solid lightgrey;
+}
+
+.form-container form textarea:hover {
+    border: 2px solid #555;
+}
+
+.form-container form input[type=text]:hover {
+    border: 2px solid #555;
+}
+
+.form-container form input[type=email]:hover {
     border: 2px solid #555;
 }
 
