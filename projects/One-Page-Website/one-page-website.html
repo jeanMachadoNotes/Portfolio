@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Jiu-Jitsu Moves | Library </title>
+		<meta chartset="utf-8">
+		<script src="./JS/one_page_website.js" defer></script>
+		<link rel="stylesheet" href="./css/one-page-website.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+		<link rel="manifest" href="./favicon/site.webmanifest">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		
+		<!-- NAV -->
+		<div class="menu-wrap">
+			<div class="menu-container"> 
+				<ul class="menu">
+					<a href="#home"><li>Home</li></a>
+					<a href="#jits"><li>What is Jiu-Jitsu?</li></a>
+					<a href="#moves"><li>Moves</li></a>
+					<a href="#contact"><li>Contact Us</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div class="head-container">
+				<div class="text-center">
+					<div class="front-page">
+						<h1>The moves of <i>Brazilian</i> Jiu-Jitsu</h1>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		
+		<!-- WHAT IS Jiu-Jitsu? -->
+		<article id="jits">
+			<div class="container">
+				<h2 class="head-title"> What is Jiu-Jitsu? </h2>
+				<p>If you've ever been close to someone or wrestled around, you have done <i>Jiu-Jitsu</i>.</p>
+				<div class="topic">
+					<h3>Origins</h3>
+					<p> The Oxford Dictionary defines Jiu-Jitsu as: </p>
+					<blockquote cite="https://www.lexico.com/definition/ju-jitsu">
+						"<i>noun</i> :A Japanese system of unarmed combat and physical training.<br><br>
+						from Japanese <i>ju</i> ‘gentle’+ <i>jutsu</i> 'skill' "
+					</blockquote>
+				</div>
+				
+				<div class="topic">
+					<h3>So what is <span>Brazilian</span> Jiu-Jitsu?</h3>
+					<p><i>Brazilian</i> Jiu-Jitsu is a development of Japanese Jiu-Jitsu by Carlos Gracie, after it came to Brazil in 1917 with Japanese judo practioner and prize fighter Mitsuyo Maeda. </p>
+					<details>
+						<summary>Photo of Mitsuyo Maeda</summary>
+						<br>
+						<img src="./images/Maeda_Mitsuyo.jpg" alt="Mitsuyo Maeda" width="370" height="532"> <br>
+						<a href="./images/Maeda_Mitsuyo.jpg" action="new">Click here to enlarge</a>
+					</details>
+					<br>
+					<details>
+						<summary> Japanese Jiu-Jitsu Video </summary>
+						<br>
+						<iframe src="https://www.youtube.com/embed/TFFGo14oSxg?&mute=1&controls=1" title="Japanese Jiu-Jitsu" width="320" height="190"></iframe>
+					</details>
+										
+								
+				</div>
+			
+				<div class="topic">
+					<h3>Whats the difference?</h3>
+					<p> With the Brazilian influence on Jiu-Jitsu it, flourished into many new forms. <br> Departing from the rigid structure base of the Japanese, <br> to the flowing and dynamic nature of the Brazilians.<br><br>
+					<img src="./images/JM_Triangle.jpg" alt="A Brazilian Jiu-Jitsu move" width="426" height="240">
+					</p>
+				</div>
+			</div>
+		</article>
+		
+		<!-- END WHAT IS ERGO? -->
+		
+		<br> <br>
+
+		<!-- MOVES LIGHTBOX -->
+
+		<div>
+			<h2 class="head-title"> Jiu-Jitsu Moves </h2>
+		</div>
+
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./images/Thumb2/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow"">
+			</div>
+			<div class="column">
+				<img src="./images/Thumb2/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/Thumb2/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/Thumb2/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+			
+		</div>
+
+		<!-- Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="./images/Thumb2/thumbnail_1.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="./images/Thumb2/thumbnail_2.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="./images/Thumb2/thumbnail_3.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="./images/Thumb2/thumbnail_4.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="./images/Thumb2/thumbnail_5.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="./images/Thumb2/thumbnail_6.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="./images/Thumb2/thumbnail_7.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./images/Thumb2/thumbnail_8.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="./images/Thumb2/thumbnail_9.png" style="width:100%">
+				</div>
+				
+
+				
+				<!-- Next/Prev Controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption Text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				
+
+				<!-- Thumbnail Image Controls -->
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_1.png" onclick="currentSlide(1)" alt="Guard">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_2.png" onclick="currentSlide(2)" alt="Side Control">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_3.png" onclick="currentSlide(3)" alt="Back Control">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_4.png" onclick="currentSlide(4)" alt="Mount">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_5.png" onclick="currentSlide(5)" alt="Spider Guard">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_6.png" onclick="currentSlide(6)" alt="Kesa Gatame">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_7.png" onclick="currentSlide(7)" alt="Butterfly Guard">
+				</div>
+				
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_8.png" onclick="currentSlide(8)" alt="North South Position">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumb2/thumbnail_9.png" onclick="currentSlide(9)" alt="Turtle Position">
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- END MOVES LIGHTBOX -->
+		
+		<!-- GET HELP --->
+		
+		<div id="contact">
+			<h1 class="head-title">Contact Us</h1>
+			<div class="form-container">
+				<h2> Got Suggestions? </h2>
+				<p>Fill out the form to give your <br> technique/position suggestions to add to our site!</p>
+				<div>
+					<form action="" method="post">
+						<input class="contact" type="text" value="First Name"><br>
+						<input class="contact" type="text" value="Last Name"><br>
+						<input class="contact" type="text" value="Email"><br>
+						<input class="contact" type="text" value="Suggested Technique/Position"><br>
+						<div class="form-spacer">
+							<label class="terms">Terms and Conditions</label>
+						</div>
+						<div class="submit">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- GET HELP --->
+		
+		<!-- FOOTER --->
+		<br>
+		<footer>
+			<a href="#home"> Back to Top</a>
+			<p> www.jiujitsu.library &copy 2022</p>
+		</footer>
+		
+		<!-- END FOOTER --->
+	</body>
+</html>

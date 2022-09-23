@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ErgonnaWork</title>
+		<meta chartset="utf-8">
+	</head>
+	
+	<body>
+		
+		<!-- SITE HEADER -->
+		<div id="home">
+			<header> 
+				<img src="images/logo3.png" alt="ergonnawork logo" width="400" height="80" >
+				<nav>
+					<a href="#home">Home</a>
+					<a href="#ergo">What is Ergonomics?</a>
+					<a href="#products">Products</a>
+					<a href="#help">Get Help</a>
+				</nav>
+				
+			</header>
+			<br><br>
+		</div>
+		<!-- END SITE HEADER -->
+		
+		<!-- HOME -->
+		<div>
+			<video width="640" height="320" autoplay muted>
+				<source src="videos/wfh_girl.mp4" type="video/mp4">
+				Your browser does not support this video.
+			</video>
+			<br>
+			<h1> Working to improve how you <i>ErgonnaWork</i/></h1>
+			
+			
+		</div>
+		<!-- END HOME -->
+		
+		
+		<!-- WHAT IS ERGO? -->
+		<article id="ergo">
+			<div>
+				<h2> What is Ergonomics? </h2>
+				<p>Anyone who works at a desk or computer would benefit from knowing about <i>Ergonomics</i>.</p>
+				<div>
+					<h3>Origin</h3>
+					<p> The Oxford Dictionary defines Ergonomics as: </p>
+					<blockquote cite="https://www.oxfordlearnersdictionaries.com/us/definition/english/ergonomics">
+						"<i>noun</i> :the study of working conditions, especially the design of equipment and furniture, in order to help people work more efficiently.<br><br>
+						from Greek <i>ergon</i> ‘work’+ <i>nemein</i> 'to manage' "
+					</blockquote>
+				</div>
+				
+				<div>
+					<h3>So what is it?</h3>
+					<p>So <i>Ergonomics</i> has to do with, <b> how to manage <em> how one works.</em></b> The science of making your work enviroment more comfortable.</p>
+					<details>
+						<summary>A Simple Guide to Ergonomics</summary>
+						<br>
+						<img src="./images/thumb/ergonomics_1.jpg" alt="Ergonomics Set-Up" width="400" height="315"> <br>
+						<a href="./images/thumb/ergonomics_1.jpg" action="new">Click here to enlarge</a>
+					</details>
+					<br>
+					<details>
+						<summary> Ergonomics Video </summary>
+						<br>
+						<iframe src="https://www.youtube.com/embed/wYvqHJ7FNAM?&mute=1&controls=1" title="Laptop on Desk" width="320" height="190"></iframe>
+					</details>
+					
+					
+					
+					
+					
+				</div>
+			
+				<div>
+					<h3>What can you do?</h3>
+					<p>There is a simple method to improve your workspace. By changing out certain elements, <br> it can dramtically improves ones enviroment.<br><br>
+					<img src="./images/thumb/ergonomics_2.png" alt="Ergonomic suggestions" width="540" height="270">
+					</p>
+				</div>
+			</div>
+		</article>
+		
+		<!-- END WHAT IS ERGO? -->
+		
+		<!-- GALLERY -->
+		<section>
+			<div id="products">
+				<h1>Products</h1>
+				<div> <!-- ENTIRE GALLERY -->
+					
+					<!-- PHOTO-CONTAINER 1 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_1.jpg" alt="Logitech Ergo K860 Keyboard" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Logitech Ergo K860 Keyboard</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 1 -->
+					
+					<!-- PHOTO-CONTAINER 2 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_2.jpg" alt="Logitech MX Verticle Mouse" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Logitech MX Verticle Mouse</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 2 -->
+					
+					<!-- PHOTO-CONTAINER 3 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_3.jpg" alt="LG 32&quot; UltraFine Display Ergo 4K Monitor" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>LG 32" UltrFine Display Ergo 4K Monitor</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 3 -->
+					
+					<!-- PHOTO-CONTAINER 4 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_4.jpg" alt="Ergo Chair Pro+ by Autonomous" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Ergo Chair Pro<sup>+</sup> by Autonomous</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 4 -->
+					
+					<!-- PHOTO-CONTAINER 5 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_5.jpg" alt="SmartDesk Pro by Autonomous" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>SmartDesk Pro by Autonomous</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 5 -->
+					
+					<!-- PHOTO-CONTAINER 6 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_6.jpg" alt="Yohann Laptop Stand" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Yohann Laptop Stand</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 6 -->
+					
+					<!-- PHOTO-CONTAINER 7 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_7.jpg" alt="BenQ ScreenBar Plus LED Clip Desk Lamp" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>BenQ ScreenBar Plus</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 7 -->
+					
+					<!-- PHOTO-CONTAINER 8 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_8.jpg" alt="Blue Light Glasses" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Blue Light Glasses</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 8 -->
+					
+					<!-- PHOTO-CONTAINER 9 -->
+					<div> <!-- BORDER/SHADOW -->
+						<div> <!-- IMAGE -->
+							<img src="./images/thumb/thumbnail_9.jpg" alt="Footrest by Steelcase" width="540" height="360">
+							<div> <!--OVERLAY ON PHOTO -->
+								<h3>Footrest by Steelcase</h3>
+								<p>Click to Enlarge</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 9 -->
+					
+										
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+		
+		<!-- GET HELP --->
+		
+		<div id="help">
+			<div>
+				<h2> Get Design Help </h2>
+				<p>Fill out the form to get help from one of our <i>Ergo-</i>Experts!</p>
+				<div>
+					<form action="" method="post">
+						<input class="contact" type="text" value="First Name"><br>
+						<input class="contact" type="text" value="Last Name"><br>
+						<input class="contact" type="text" value="Email"><br>
+						<input class="contact" type="text" value="Description"><br>
+						<div class="form-spacer">
+							<label class="terms">Terms and Conditions</label>
+						</div>
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- GET HELP --->
+		
+		<!-- FOOTER --->
+		<br>
+		<footer>
+			<a href="#home"> Back to Top</a>
+			<p> www.ergonnawork.co &copy 2022</p>
+		</footer>
+		
+		<!-- END FOOTER --->
+	</body>
+</html>
