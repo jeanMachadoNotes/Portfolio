@@ -1,0 +1,10 @@
+:root {
+    --font: 'Joan', sans-serif;
+    --font-copy:'PT Serif', serif;
+    --font-accent: 'Montserrat', sans-serif;
+    --font-accent-2: 'Lato', sans-serif;
+    --color-grey: "#3A3F42";
+    --banner-gold: '#D9BA55';
+    --banner-brown: '#A39687';
+    --banner-light-grey: '#F9F9F9';
+}
