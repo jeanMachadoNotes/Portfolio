@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'serif';
     box-sizing: border-box;
     scroll-behavior: smooth;
     
@@ -138,7 +137,15 @@
     margin: 0px auto 10px;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
-      
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-card {
+        flex-direction: column;
+    }
 }
 
 .style-light {
