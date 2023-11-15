@@ -24,4 +24,10 @@ p {
 
 a {
     font-family: var(--font-accent-2);
+    font-size: 16px;
+}
+
+a.btn {
+    font-family: var(--font-accent);
+    font-size: 12px;
 }
